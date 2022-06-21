@@ -1,71 +1,58 @@
 # 1
-# products_list = []
-# while True:
-#     command = input(
-#         "Введите команду:\n\t1.add: Добавить продукт в список\n\t2.delete: Удалить продукт из списка"
-#         "\n\t3.show: Вывод списка продуктов\n\t4.clear: Очистить список\n\t5.search: Наличие продукта в списке"
-#         "\n\t6.break: Остановить программу\nВаша команда:").lower()
-#     if command == "1":
-#         product_name = input("Введите название продукта: ")
-#         products_list.append(product_name)
-#     elif command == "2":
-#         product_name = input("Введите название продукта: ")
-#         if product_name not in products_list:
-#             print("Такого продукта нет в списке")
-#             continue
-#         products_list.remove(product_name)
-#     elif command == "3":
-#         print(products_list)
-#     elif command == "4":
-#         products_list.clear()
-#     elif command == "5":
-#         name = input("Введите название продукта:")
-#         if name not in products_list:
-#             print("Такого продукта нет в списке")
-#             continue
-#         print("Продукт есть в списке")
-#     elif command == "6":
-#         print("Остановка работы")
-#         break
-#     else:
-#         print("Такой команды нет\n")
+# dict_1 = {}
+# i = 0
+# while i < 5:
+#     i += 1
+#     num = int(input("Введите число"))
+#     dict_1[num] = num * num
+#     # print(dict_1)
+# print(dict_1)
 
 # 2
-# money = int(input("Введите кол-во денег для вклада:"))
-# year = int(input("Введите срок вклада в годах:"))
-# i = 0
-# percent = 0
-# while i <= year:
-#     i += 1
-#     percent = money / 10
-#     money += percent
-# print(money)
+# sm = 0
+# dict_1 = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+# for i, j in dict_1.items():
+#     sm = sm + dict_1[i]
+#     print(sm)
+# sr = sm / len(dict_1)
+# print(sr)
 
 # 3
-# rows = int(input("Введите кол-во строк:"))
-# for i in range(rows + 1):
-#     for num in range(i):
-#         print(num + 1, end=" ")
-#     print("")
+# list_1 = [1, 3, 5, 7, 9]
+# list_2 = [2, 4, 6, 8, 10]
+# print(dict(zip(list_1, list_2)))
 
 # 4
-# numbers = [12, 75, 150, 180, 145, 525, 50]
-# for num in numbers:
-#     if num % 5 == 0 and num <= 150:
-#         print(num)
-#     elif num > 500:
-#         print("Число больше 500")
-#         break
+# dict_1 = {"Moscow": (550, 370), "London": (510, 510), "Paris": (480, 480)}
+# dist = {}
+# ML = ((550 - 370) ** 2 + (510 - 510) ** 2) ** 0,5
+# dist["Msc => London"] = ML
+# MP = ((550 - 370) ** 2 + (480 - 480) ** 2) ** 0,5
+# dist["Msc => Paris"] = MP
+# LP = ((510 - 510) ** 2 + (480 - 480) ** 2) ** 0,5
+# dist["London => Paris"] = LP
+# print(dist)
+# Я слегка не понял как выполнять это задание
 
 # 5
-# a = 0
-# b = 1
-# c = int(input("Введите кол-во раз:"))
-# i = 0
-# print(a, b, end=" ")
-# while i <= (c // 2):
-#     i += 1
-#     a += b
-#     print(a, end=" ")
-#     b += a
-#     print(b, end=" ")
+# goods = {"Лампа": '12345', "Стол": '23456', "Диван": '34567', "Стул": '45678'}
+# store = {'12345': [{'quanity': 27, 'price': 42}],
+#          '23456': [{'quanity': 22, 'price': 510}, {'quanity': 31, 'price': 520}],
+#          '34567': [{'quanity': 2, 'price': 1200}, {'quanity': 1, 'price': 1150}],
+#          '45678': [{'quanity': 50, 'price': 100}, {'quanity': 12, 'price': 95}, {'quanity': 43, 'price': 97}]}
+# print(store[goods["Лампа"]])
+# while True:
+#     command = int(input(
+#         'Введите команду:\n\t1-"Лампа"\n\t2-"Стол"'
+#         '\n\t3-"Диван"\n\t4-"Стул"\nВаша команда'))
+#     if command == 1:
+#         # for i, j in store[goods["Лампа"]]:
+#         print(f"Стоимость всех стульев:{27 * 42}")
+#     elif command == 2:
+#         print(f"Стоимость всех столов:{(22 * 510) + (31 * 520)}")
+#     elif command == 3:
+#         print(f"Стоимость всех диванов:{(2 * 1200) + (1 * 1150)}")
+#     elif command == 4:
+#         print(f"Стоимость всех стульев:{(50 * 100) + (12 * 95) + (42 * 97)}")
+#     else:
+#         print("Такого номера нет")
