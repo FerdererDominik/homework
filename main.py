@@ -1,34 +1,82 @@
 # 1
-# try:
-#     num1 = (input('Введите первое число'))
-#     num2 = (input('Введите второе число'))
-#     print(int(num1) + int(num2))
-# except ValueError:
-#     print(num1 + num2)
+
 
 # 2
-# sample = 'Exercises number 1 12 13 and 345 are important 456'
-# splited = list(sample.split())
-# for num in splited:
-#     try:
-#         int(num)
-#         if len(num) == 3:
-#             print(num)
-#     except ValueError:
-#         pass
+# class AnimalTypes:
+#     def __init__(self, birds, mammals, reptiles, fish):
+#         self.birds = birds
+#         self.mammals = mammals
+#         self.reptiles = reptiles
+#         self.fish = fish
+#
+#
+# class Birds(AnimalTypes):
+#     def __init__(self, color, habitat, wingspan, feeds_on):
+#         self.color = color
+#         self.habitat = habitat
+#         self.wingspan = wingspan
+#         self.feeds_on = feeds_on
+#
+#
+#
+# class Mammals(AnimalTypes):
+#     def __init__(self, color, habitat, size, feeds_on):
+#         self.color = color
+#         self.habitat = habitat
+#         self.size = size
+#         self.feeds_on = feeds_on
+#
+#
+# class Reptiles(AnimalTypes):
+#     def __init__(self, habitat, size_scales, size, feeds_on):
+#         self.habitat = habitat
+#         self.size_scales = size_scales
+#         self.size = size
+#         self.feeds_on = feeds_on
+#
+#
+#
+# class Fish(AnimalTypes):
+#     def __init__(self, color, habitat, feeds_on):
+#         self.color = color
+#         self.habitat = habitat
+#         self.feeds_on = feeds_on
+#
+#
+# chiken = Birds('белый', 'фермы', 0.3,'зерно')
+# eagle = Birds('черно-белый', 'горы', 2, 'мясо')
 
 # 3
-# food = ['chocolate', 'chiken', 'corn', 'sandwich', 'soup', 'potatoes', 'beef', 'lox', 'lemonade']
-# fifth = []
-# for x in food:
-#     try:
-#         fifth.append(x[4])
-#     except IndexError:
-#         pass
-# print(fifth)
 
-# 4
-
-# 5
-
-# 6
+# class Figure:
+#     def __init__(self, square, triangle, circle):
+#         self.square = square
+#         self.triangle = triangle
+#         self.circle = circle
+#
+#
+# class Square(Figure):
+#     def __init__(self, a: int, b: int, c: int):
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#
+#     def p_and_s(self):
+#
+#
+# class Triangle(Figure):
+#     def __init__(self, a: int, b: int):
+#         self.a = a
+#         self.b = b
+#
+#     def p_and_s(self):
+#         p = 2(self.a + self.b)
+#
+#
+#
+# class Circle(Figure):
+#     def __init__(self, a: int, b: int, c: int):
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#     def  p_and_s(self):
